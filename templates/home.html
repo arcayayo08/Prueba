@@ -15,17 +15,18 @@
   </form>
 </body>
 
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">¡Hola a todos!</h1>
+    <p class="lead">
+      Gracias por visitar mi nuevo proyecto.
+      <hr class="my-4" />
+      <p>
+        El contenido de la página aún se encuentra en desarrollo.
+      </p>
+      <a class="btn btn-primary btn-lg" href="{{ url_for('about') }}" role="button">Saber más</a>
+  </div>
+</body>
+
 </html>
 {% endblock %}
-
-
-<div class="jumbotron">
-  <h1 class="display-4">¡Hola a todos!</h1>
-  <p class="lead">
-    Gracias por visitar mi nuevo proyecto.
-    <hr class="my-4" />
-    <p>
-      El contenido de la página aún se encuentra en desarrollo.
-    </p>
-    <a class="btn btn-primary btn-lg" href="{{ url_for('about') }}" role="button">Saber más</a>
-</div>
