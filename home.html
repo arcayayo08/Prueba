@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block content %}
+<html>
+
+<head>
+  <title>Book price comparator</title>
+</head>
+
+<body>
+  <h1>Book price comparator</h1>
+  <form action="/book">
+    <label>ISBN
+      <input type="text" name="isbn">
+    </label>
+    <input type="submit" value="Get book information">
+  </form>
+</body>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">¡Hola a todos!</h1>
+    <p class="lead">
+      Gracias por visitar mi nuevo proyecto.
+      <hr class="my-4" />
+      <p>
+        El contenido de la página aún se encuentra en desarrollo.
+      </p>
+      <a class="btn btn-primary btn-lg" href="{{ url_for('about') }}" role="button">Saber más</a>
+  </div>
+</body>
+
+</html>
+{% endblock %}
